@@ -7,6 +7,7 @@
     background-color: orange;
     height: 100px;
     border-radius:15px;
+    width:100%;
  }
 
  .navbar{
@@ -19,9 +20,28 @@
     gap: 1.2rem;
     text-decoration: none;
  }
+ @media (max-width: 400px){
+       .navbar ul{
+        display:flex;
+        flex-direction: column;
+    /* gap: 0.2rem; */
+    text-decoration: none;
+ }
+ .navbar{
+    background-color: orange;
+    height: auto;
+    border-radius:auto;
+    width:auto;
+ }
+    .navbar{
+    padding-left:auto;
+    margin-left:auto;
+ }
+  
+ }
  .navbar li{
     border: 2px solid black;
-    /* width: 100px; */
+    width: 100px;
     padding:2px;
     display: flex;
     justify-content: flex-end;
@@ -42,4 +62,7 @@ footer{
     display: flex;
     justify-content: center;
     background-color: bisque;
+}
+.aluu{
+    width:auto;
 }
